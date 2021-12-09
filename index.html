@@ -1,0 +1,15 @@
+<canvas id="myCanvas" width="1000" height="1000"></canvas>
+<script>
+    var c=document.getElementById("myCanvas");
+    var pen=c.getContext("2d");
+    for (var i = 0; i < 255; i=i+25) {
+    for (var j = 1; j < 255; j=j+25) {
+    pen.fillStyle = 'rgb(0,'+i+','+j+')';
+    pen.beginPath();
+    pen.moveTo(i,j);
+    
+    pen.fill();}}
+
+
+
+</script>
